@@ -15,5 +15,11 @@
       "path": "/api/cron",
       "schedule": "0 1 * * *"
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://usopwlhxwmxi.ap-northeast-1.clawcloudrun.com/$1"
+    }
   ]
 }
